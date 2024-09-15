@@ -24,3 +24,8 @@ For the LEDs themselfes i used:
 2. configure the WLED controller with WiFi and all other settings
 3. Solder everything together (note that per default if you just have one LED Strip then you should use the GPIO 2 connection, as this is the WLED default)
 4. Have fun
+
+## Case
+
+The case stl files can be found in the `case` directory.
+They are originally from [thingiverse](https://www.thingiverse.com/thing:6767292/) and there remixed from [here](https://www.thingiverse.com/thing:3588987) under `CC BY-NC`
