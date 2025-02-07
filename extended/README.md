@@ -41,4 +41,5 @@ For the LEDs themselfes i used:
 ## Case
 
 The case stl files can be found in the `case` directory.
-They are originally from [thingiverse]() and there remixed from [here](https://www.thingiverse.com/thing:3588987) under `CC BY-NC`
+It is built based on [this](https://www.thingiverse.com/thing:3588987) under `CC BY-NC`.
+It is not directly remixed from this, because thingiverse is unable to process that large thing :)
