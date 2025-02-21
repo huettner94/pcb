@@ -43,3 +43,13 @@ For the LEDs themselfes i used:
 The case stl files can be found in the `case` directory.
 It is built based on [this](https://www.thingiverse.com/thing:3588987) under `CC BY-NC`.
 It is not directly remixed from this, because thingiverse is unable to process that large thing :)
+
+## Changes
+
+Note that previous versions of the PCB used GPIO 13 (D7) for the relay.
+That has the issue that GPIO 13 (D7) is shortly pulled high during boot causing the led strip to light up shortly.
+Newer versions of the PCB use GPIO 5 (D1) now which does not have that problem.
+On an old PCB you might want to wire this by hand.
+
+For details see [here](https://rabbithole.wwwdotorg.org/2017/03/28/esp8266-gpio.html).
+
