@@ -965,7 +965,7 @@
 			)
 			(polyline
 				(pts
-					(xy 13.97 -2.54) (xy 14.9225 -5.3975)
+					(xy 13.97 -2.54) (xy 12.7 -5.08)
 				)
 				(stroke
 					(width 0.127)
@@ -1130,6 +1130,14 @@
 			)
 		)
 		(symbol "AZ943-1CH-5DE_1_1"
+			(text "output 3 high when input low"
+				(at 13.716 -9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(pin passive line
 				(at 0 0 0)
 				(length 7.62)
