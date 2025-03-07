@@ -17,6 +17,7 @@ This controller works with a 24V power supply for the LEDs and does the necessar
 | Polyfuse RUSBF120-2 | F4 | [here](https://www.digikey.de/de/products/detail/littelfuse-inc/RUSBF120-2/5029818) |
 | Resistor CF14JT33R0 | R1, R2 | [here](https://www.digikey.de/de/products/detail/stackpole-electronics-inc/CF14JT33R0/1741397) |
 | Resistor CF18JT4K70 | R3 | [here](https://www.digikey.de/de/products/detail/stackpole-electronics-inc/CF18JT4K70/1741708) |
+| Resistor 5.1k | R4 | |
 | LED WP7113ID | D1 | [here](https://www.digikey.de/de/products/detail/kingbright/WP7113ID/1747663) |
 | Capacitor 35ZLH1500MEFC16X20 | C1 | [here](https://www.digikey.de/de/products/detail/rubycon/35ZLH1500MEFC16X20/3564410) |
 | Capacitor 860020672005 | C2, C5 | [here](https://www.digikey.de/de/products/detail/w%C3%BCrth-elektronik/860020672005/5727088) |
@@ -49,7 +50,12 @@ It is not directly remixed from this, because thingiverse is unable to process t
 Note that previous versions of the PCB used GPIO 13 (D7) for the relay.
 That has the issue that GPIO 13 (D7) is shortly pulled high during boot causing the led strip to light up shortly.
 Newer versions of the PCB use GPIO 5 (D1) now which does not have that problem.
-On an old PCB you might want to wire this by hand.
+However GPIO 5 is missing a pull-down resistor, so this has been added as well.
+
+On an old PCB will want to:
+* Cut the input of D7
+* Cable D1 to the PCB hole below D7
+* Add a 5.1k Resistor between D1 and GND (maybe to the GND screw terminal)
 
 For details see [here](https://rabbithole.wwwdotorg.org/2017/03/28/esp8266-gpio.html).
 

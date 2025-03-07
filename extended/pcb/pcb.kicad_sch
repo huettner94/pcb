@@ -3790,6 +3790,12 @@
 		(uuid "6a22c6e7-0f0e-4089-9ed9-78b64e933469")
 	)
 	(junction
+		(at 129.54 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73a8e633-e699-4023-8b9d-4e673fca6589")
+	)
+	(junction
 		(at 226.06 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3812,6 +3818,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9abe0a1c-851e-4269-9841-f0b2d6d0a985")
+	)
+	(junction
+		(at 129.54 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6588ce7-4cea-4b26-906b-2204a2063b73")
 	)
 	(junction
 		(at 119.38 55.88)
@@ -3973,7 +3985,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 119.38) (xy 140.97 119.38)
+			(xy 124.46 119.38) (xy 129.54 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4633,7 +4645,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 88.9) (xy 140.97 88.9)
+			(xy 120.65 88.9) (xy 129.54 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4673,6 +4685,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 99.06) (xy 129.54 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c94ad21e-53db-443c-93a3-e10e5281f9b0")
+	)
+	(wire
+		(pts
 			(xy 50.8 53.34) (xy 50.8 116.84)
 		)
 		(stroke
@@ -4680,6 +4702,16 @@
 			(type default)
 		)
 		(uuid "ca5c0c34-cde4-4c41-93b2-19f7063c29a5")
+	)
+	(wire
+		(pts
+			(xy 129.54 106.68) (xy 129.54 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceec40af-8e4a-4017-adb3-7d299f970090")
 	)
 	(wire
 		(pts
@@ -4720,6 +4752,16 @@
 			(type default)
 		)
 		(uuid "da8f7337-9c99-48d4-bb03-b997d24e006e")
+	)
+	(wire
+		(pts
+			(xy 129.54 88.9) (xy 140.97 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db702e07-9c46-491b-9602-f0f89910fefb")
 	)
 	(wire
 		(pts
@@ -4770,6 +4812,16 @@
 			(type default)
 		)
 		(uuid "f2d0318b-5bf7-4ed4-aa91-3c7fe5d44c7b")
+	)
+	(wire
+		(pts
+			(xy 129.54 119.38) (xy 140.97 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f389f5b2-6f3c-4f9e-9147-299d82284498")
 	)
 	(wire
 		(pts
@@ -6037,6 +6089,75 @@
 			(project "pcb"
 				(path "/f9e27db9-af07-4f92-8184-1b5de79e3cda"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 129.54 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "65f19be5-3257-4692-82f8-4ddbcd9ec2df")
+		(property "Reference" "R4"
+			(at 124.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R 5.1k"
+			(at 121.666 104.394 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 127.762 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 129.54 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d2a8c03-55f7-47b7-818d-a7d9f25d1df4")
+		)
+		(pin "2"
+			(uuid "021a3ff3-8cb4-453b-b001-e7c63da87ae6")
+		)
+		(instances
+			(project "pcb"
+				(path "/f9e27db9-af07-4f92-8184-1b5de79e3cda"
+					(reference "R4")
 					(unit 1)
 				)
 			)
